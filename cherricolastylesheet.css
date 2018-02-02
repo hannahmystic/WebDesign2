@@ -4,19 +4,21 @@ h1{
     font-family: 'Pacifico', cursive;
 }
 
+.topbar img{
+    max-width: 320px;
+    max-height: 223px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .topbar{
     background-color: rgb(255, 242, 101);
+    display: block;
 }
 
-/* .logo{ */
-    .logo{
-
-    display: inline-block;
-   /* vertical-align: middle; */
+.logo{
+    
+    padding: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
 }
-
-/*.cc{
-    width: 20%
-    display: inline-block;
-}
-*/
