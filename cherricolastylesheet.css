@@ -1,0 +1,22 @@
+*{ box-sizing: border-box; }
+
+h1{
+    font-family: 'Pacifico', cursive;
+}
+
+.topbar{
+    background-color: rgb(255, 242, 101);
+}
+
+/* .logo{ */
+    .logo{
+
+    display: inline-block;
+   /* vertical-align: middle; */
+}
+
+/*.cc{
+    width: 20%
+    display: inline-block;
+}
+*/
