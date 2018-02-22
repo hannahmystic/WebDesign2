@@ -1,24 +1,133 @@
 *{ box-sizing: border-box; }
 
-h1{
-    font-family: 'Pacifico', cursive;
+body{ background-color: #fffb8b;}
+
+ul{
+    font-family: Impact, Charcoal, sans-serif;
 }
 
-.topbar img{
-    max-width: 320px;
-    max-height: 223px;
-    display: inline-block;
-    vertical-align: middle;
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5625rem;
+}
+
+h2{ 
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 1.875rem;
 }
 
 .topbar{
-    background-color: rgb(255, 242, 101);
-    display: block;
+    padding: 1.125rem 1.375rem .5rem 1.375rem;
+    max-width: 29rem;
+}
+
+.topbar h1{
+    width: 13rem;
+    margin: 0;
+    margin-after:
 }
 
 .logo{
-    
-    padding: 5%;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
+    width: 6.5rem;
+    display: inline-block;
 }
+
+.navigation{
+    list-style: none;
+    margin: 0 0 0 5.7rem;
+    padding: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    padding: 0 1rem 0 0;
+
+}
+
+.navigation a:hover{
+    -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+    animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+@media screen and (min-width=615px;)
+{
+    .topbar h1{
+        font-size: 5.125rem;
+        width: 25.25rem;
+    }
+    .topbar{
+        padding-top: 2rem;
+    }
+    .logo{
+        width: 14.625rem;
+    }
+    .navigation{
+        margin: 0 0 0 10.25rem;
+    }
+    .navigation a{
+        font-size: 2.25rem;
+    }
+    h2{
+        font-size: 2.625rem;
+    }
+
+}
+
+@media screen and (min-width=1000px;)
+{
+
+}
+
+
+
+
+
+
+/*
+UPCOMING ANIMATIONS FROM 
+https://codepen.io/FelixRilling/pen/qzfoc?editors=0100
+I'M GOING TO CHANGE THEM TO MAKE THEM MY OWN,
+BUT THIS IS TO GET THE IDEA.
+*/
+@-webkit-keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+  /*glow for mozilla*/
+
+  @-moz-keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+  /*glow*/
+
+  @keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+  /*REEEEEEEEEEESPONSIVE*/
