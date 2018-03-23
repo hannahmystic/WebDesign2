@@ -3,16 +3,17 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>CherriCola.com</title>
-	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="cherricolastylesheet.css">
+	<title>Cherri Cola</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="colastylesheet.css">
 
     <meta name="viewport"
     content="width=device-width, 
     initial-scale=1.0">
     <style>
     img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     }
     </style>
@@ -24,23 +25,80 @@
         content="width=device-width,
         initial-scale=1.0">
 
-    <div class="topbar">
+    <div class="container">
 
         <div class="logo">
-            <img src="media/logo2.png" alt="Cherri Bomb" width="320" height="223"> 
+            <a href="index.html">
+            <img src="media/logoBright.svg" alt="Cherri Bomb" preserveAspectRatio="xMidYMid meet"> 
+            </a>
         </div>
 
-        <h1>Cherri Cola </h1>
+        <div class="name">
+            <a href="index.html">
+             <h1>Cherri Cola </h1>
+            </a>
+        </div>
+
+        <ul class="navigation">
+            <li ><a href="music.html" id="limusic">MUSIC</a></li>
+            <li ><a href="about.html" id="liabout">ABOUT</a></li>
+            <li><a href="contact.html" id="licontact">CONTACT</a></li>
+            <li ><a href="shows.html" id="lishows">SHOWS</a></li>
+            <li><a href="merch.html" id="limerch">MERCH</a></li>
+        </ul>
+    
+        <div class="social">
+            <a href="https://www.youtube.com/channel/UCkeDBJhVnToVLl5OXC9h7WQ"><img src="social/youtube32.png" alt="youtube"></a>
+            <a href="https://twitter.com/cola_cherri?lang=en"><img src="social/twitter32.png" alt="twitter"></a>
+            <a href="https://www.instagram.com/cherricolaband/?hl=en"><img src="social/instagram32.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/cherricolagrrrls/"><img src="social/facebook32.png" alt="facebook"></a>
+        </div>
+
+
+        <div class="sidePhotos">
+                <div class="sp" id="hannah">
+                    <img src="media/hannahSquare.png" alt="Hannah Mystic">
+                    <h6>HANNAH</h6>
+                </div>
+                <div class="sp" id="mc">
+                    <img src="media/mcSquare.png" alt="Mary Claire">
+                    <h6>M.C.</h6>
+                </div>
+                <div class="sp" id="cc">
+                    <img src="media/ccSquare.png" alt="C.C.">
+                    <h6>C.C.</h6>
+                </div>
+                <div class="sp" id="zoe">
+                    <img src="media/zoeSquare.png" alt="Zoe">
+                    <h6>ZOE</h6>
+                </div>
+            </div>
+
+        
+        <main>
+            
+            <h2 id="item1">Music from Our Latest Show</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLU68xRFQvSu8B9saEqd_Mq1zQzUv1fK0h" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            <a href= "about.html#grrrls">
+                <h2 id=item2>Meet the Riot Grrrls</h2>
+                <img srcset="media/group_big.png 1200w, media/group_med.png 700w, media/group_small.png  300w"
+                src="media/group_small.png"
+                 alt="Riot Grrrls" />
+            </a>
+
+            <a href= "merch.html">
+                <h2 id=item3>Get a FREE Sticker</h2>
+                <img srcset="media/stickerlogo_large.png 700w, media/stickerlogo_med.png 500w, media/stickerlogo_small.png  300w"
+                src="media/stickerlogo_small.png"
+                 alt="Stickers!" id="sticker"/>
+            </a>
+
+        </main>
 
     </div>
 
-    <ul class="navigation">
-        <li><a href="music.html">MUSIC</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="shows.html">SHOWS</a></li>
-        <li><a href="merch.html">MERCH</a></li>
-    </ul>
+
 
 </body>
 

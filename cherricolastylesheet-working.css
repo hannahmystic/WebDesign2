@@ -1,0 +1,293 @@
+*{ box-sizing: border-box; }
+
+body{ background-color: #570029;}
+
+ul{
+    font-family: 'Quicksand', Impact, Charcoal, sans-serif;
+    font-size: 6.667vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li{
+    font-size: 6.667vw;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 11.667vw;
+    color: #ffc9d6;
+    margin: 0;
+    padding: 0;
+}
+
+h2{ 
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 1.875rem;
+}
+
+.name{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    grid-area: name;
+}
+
+.logo{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    grid-area: logo;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 5% 30% 60% 5%;
+    grid-template-rows: 25.56vw 17.778vw 12vw;
+    grid-template-areas:
+        '. logo name .'
+        '. navigation navigation .'
+        '. social social .';
+    align-items: end;
+}
+
+
+.container{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    padding-top: .5rem;
+}
+
+
+
+.logo img{
+    width: 30vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navigation{
+    list-style: none;
+    /*margin: 1rem 5vw .6rem 5vw;*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    grid-area: navigation;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #ffc9d6;
+    font-size: 6.667vw;
+    padding: 0 1rem 0 0;
+
+}
+
+
+.social{
+    padding: 0 10vw 0 10vw;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    justify-content: space-between;
+
+    grid-area: social;
+}
+
+.navigation a:hover{
+    -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+    animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+.sidePhotos{
+    display: hidden;
+    width: 18vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    grid-area: photos;
+}
+
+.sp{
+    display: none;
+    background-color: white;
+    width: 7.625rem;
+    margin: 0;
+}
+
+.sp img{
+    max-width: 100%;
+    padding: .375rem;
+    margin: 0 auto;
+    border: 0;
+}
+
+h6{
+    font-size: 1.5rem;
+    font-family: 'Waiting for the Sunrise', cursive;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    text-align: center;
+}
+
+#hannah, #cc{
+    -ms-transform: rotate(10deg); 
+    -webkit-transform: rotate(10deg); 
+    transform: rotate(10deg);
+}
+
+#mc, #zoe{
+    -ms-transform: rotate(-10deg); 
+    -webkit-transform: rotate(-10deg); 
+    transform: rotate(-10deg);
+}
+
+
+
+/*_____________________________________
+|                                      |
+|         MEDIUM SCREEN QUEREY         | 
+|______________________________________|
+*/
+
+@media screen and (min-width: 490px)
+{
+    .social{
+        padding: 0;
+        padding-bottom: .5rem;
+        border: 0;
+        margin: 0;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: 6.5% 30% 29% 28% 6.5%;
+        grid-template-rows: 7.7vw 16.67vw 8.334vw;
+        grid-template-areas:
+        '. . . social .'
+        '. logo name name .'
+        '. navigation navigation navigation .';
+        align-items: end;
+    }
+
+    h1{
+        font-size: 11vw;
+    }
+
+    .navigation a{
+        font-size: 4.5vw;
+        padding: 0;
+    }
+
+}
+
+
+/*_____________________________________
+|                                      |
+|         LARGE SCREEN QUEREY          | 
+|______________________________________|
+*/
+@media screen and (min-width: 900px)
+{
+    h1{
+        font-size: 7vw;
+    }
+
+    .navigation a{
+        font-size: 2.22vw;
+    }
+
+    h2{
+        font-size: 3vw;
+    }
+
+    .social{
+        padding: 0;
+    }
+
+    .container{
+
+        display: grid;
+        grid-template-columns: 1.6fr 1.56fr 2.4fr 1fr;
+        grid-template-rows: 5.5vw 7.6vw 4.5vw;
+        grid-template-areas:
+        '. logo name social'
+        'photos logo name .'
+        'photos logo navigation .';
+        align-items: end;
+
+        justify-content: end;
+    }
+
+    .sidePhotos{
+        display: inline-block;
+    }
+    .sp{
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+/*
+UPCOMING ANIMATIONS FROM 
+https://codepen.io/FelixRilling/pen/qzfoc?editors=0100
+I'M GOING TO CHANGE THEM TO MAKE THEM MY OWN,
+BUT THIS IS TO GET THE IDEA.
+*/
+@-webkit-keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+  /*glow for mozilla*/
+
+  @-moz-keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+  /*glow*/
+
+  @keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+  /*REEEEEEEEEEESPONSIVE*/
